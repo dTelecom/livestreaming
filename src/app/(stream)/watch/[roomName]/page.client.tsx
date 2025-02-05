@@ -4,7 +4,7 @@ import { Chat } from "@/components/chat";
 import { ReactionBar } from "@/components/reaction-bar";
 import { Spinner } from "@/components/spinner";
 import { StreamPlayer } from "@/components/stream-player";
-import { JoinStreamResponse } from "@/lib/controller";
+import { ConnectionDetails } from "@/lib/controller";
 import { cn } from "@/lib/utils";
 import { LiveKitRoom } from "@dtelecom/components-react";
 import { ArrowRightIcon, PersonIcon } from "@radix-ui/react-icons";
@@ -40,7 +40,7 @@ export default function WatchPage({
         identity: name,
       }),
     });
-    const connection_details = (await res.json()) as JoinStreamResponse;
+    const connection_details = (await res.json()) as ConnectionDetails;
 
     setRoomToken(connection_details.token);
     setWsUrl(connection_details.ws_url);

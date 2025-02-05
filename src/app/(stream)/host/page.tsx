@@ -4,6 +4,7 @@ import HostPageImpl from "./page.client";
 interface PageProps {
   searchParams: {
     rt: string | undefined;
+    wsUrl: string | undefined;
   };
 }
 

@@ -25,7 +25,7 @@ export class Controller {
   async createStream({
     identity,
     room_name,
-  }: CreateStreamParams, clientIp): Promise<ConnectionDetails> {
+  }: CreateStreamParams, clientIp: string): Promise<ConnectionDetails> {
     const at = new AccessToken(
       process.env.API_KEY,
       process.env.API_SECRET,
@@ -53,7 +53,7 @@ export class Controller {
   async joinStream({
     identity,
     room_name,
-  }: JoinStreamParams, clientIp): Promise<ConnectionDetails> {
+  }: JoinStreamParams, clientIp: string): Promise<ConnectionDetails> {
     const at = new AccessToken(
       process.env.API_KEY,
       process.env.API_SECRET,
