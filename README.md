@@ -33,6 +33,6 @@ You can test it by opening [http://localhost:3000](http://localhost:3000) in a b
 
 This demo is a Next.js app. You can deploy to your Vercel account with one click:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdtelecom%2Flivestreaming&env=API_KEY,sAPI_SECRET)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdtelecom%2Flivestreaming&env=API_KEY,API_SECRET)
 
 Refer to the [the Next.js deployment documentation](https://nextjs.org/docs/deployment) for more about deploying to a production environment.
